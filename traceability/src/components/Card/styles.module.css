@@ -1,0 +1,68 @@
+@import '../../styles/variables.css';
+
+.card {
+    margin: 1em;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadiusS);
+    background-color: var(--bgColor);
+    min-height: 24em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    Background-color: var(--baseColor);
+    border-radius: var(--borderRadiusS) var(--borderRadiusS) 0 0;
+    color: var(--secTextColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 1em;
+    font-size: 1.75em;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.body img {
+    object-fit: cover;
+    background-color: var(--secTextColor);
+    flex-grow: 1;
+}
+
+.subBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.title {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+.symbol {
+    width: 1em;
+    filter: invert(1);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.notPointer {
+    cursor: default;
+}
+
+@media screen and (min-width: 961px) {
+    .card {
+        width: 100%;
+        margin: 2em 1em;
+    }
+  }

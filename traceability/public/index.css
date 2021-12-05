@@ -1,0 +1,35 @@
+@import '../src/styles/variables.css';
+
+* {
+  /* font-family: 'Silka', sans-serif; */
+  font-family: var(--font);
+}
+
+body {
+  margin: 0;
+  color: var(--textColor);
+}
+
+html, body, #root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* @font-face {
+  font-family: 'Silka';
+  src: url('./Fonts/Silka-Regular-&-Italic-Webfont/silka-regular-webfont.eot');
+  src: url('./Fonts/Silka-Regular-&-Italic-Webfont/silka-regular-webfont.woff') format('woff');
+  src: url('./Fonts/Silka-Regular-&-Italic-Webfont/silka-regular-webfont.ttf') format('opentype');
+} */
+
+@media screen and (min-width: 961px) {
+  body {
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, .05),
+      rgba(0, 0, 0, .05) 2px,
+      rgba(0, 0, 0, .15) 6px,
+      rgba(0, 0, 0, .15) 8px
+    );
+  }
+}

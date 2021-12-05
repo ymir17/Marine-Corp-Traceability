@@ -1,0 +1,69 @@
+@import '../../styles/variables.css';
+
+.link {
+  text-decoration: none;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 .1em .25em 0em rgba(0, 0, 0,.5);
+  margin: 2em;
+  height: 32vh;
+  border-radius: var(--border-radius);
+}
+
+.imgContainer {
+  height: calc(100% - 5em);
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.img {
+  width: 100%;
+}
+
+.bodyWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em;
+}
+
+.title {
+  color: var(--textColor);
+  font-size: 1.33em;
+  font-weight: normal;
+  margin: .25em;
+  width: 50%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.btn {
+  display: block;
+  background-color: var(--otherColor);
+  border: none;
+  border-radius: 1em;
+  color: var(--secTextColor);
+  padding: .5em .75em;
+  height: 2.33em;
+  cursor: pointer;
+}
+
+.notFoundMsg {
+  color: var(--secTextColor);
+  width: 50%;
+  margin: 2em auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media screen and (min-width: 961px) {
+  .card {
+    height: 24em;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+.h1 {
+  text-transform: uppercase;
+  margin: .5em;
+}
+
+.tableWrapper {
+  color: var(--textColor);
+}
+
+.tableWrapper td, .tableWrapper th {
+  padding: .5em;
+}
+
+.tableWrapper th {
+  text-align: right;
+  width: 10em;
+}

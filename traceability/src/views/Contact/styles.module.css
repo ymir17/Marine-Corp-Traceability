@@ -1,0 +1,111 @@
+.columns {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.leftColumn, .rightColumn {
+  flex-grow: 1;
+  padding: 1em 0;
+}
+
+.leftColumn {
+  text-align: center;
+}
+
+.rightColumn form {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoGroup h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: var(--otherColor);
+  font-weight: 400;
+}
+
+.infoGroup:first-child h2 {
+  margin-top: 0;
+}
+
+.infoGroup:last-child a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+.inputGroup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputGroup label {
+  width: 100%;
+}
+
+.inputGroup input, .inputGroup textarea {
+  border: none;
+  padding: .75em .5em;
+  border-radius: .5em;
+  box-shadow: inset .1em .1em .25em rgba(0, 0, 0, .25);
+  -webkit-box-shadow: inset .1em .1em .25em rgba(0, 0, 0, .25);
+  flex-grow: 1;
+}
+
+.inputGroup textarea {
+  resize: vertical;
+  min-height: 4em;
+  max-height: 8em;
+}
+
+.submit {
+  border: none;
+  background-color: var(--otherColor);
+  color: var(--secTextColor);
+  font-size: 1em;
+  padding: .75em;
+  border-radius: .5em;
+  cursor: pointer;
+}
+
+.submit:active {
+  box-shadow: inset 0em 0em .75em rgba(0, 0, 0, .5);
+  -webkit-box-shadow: inset 0em 0em .75em rgba(0, 0, 0, .5);
+}
+
+.errorMsg {
+  visibility: hidden;
+  color: #f00;
+  width: 100%;
+}
+
+.successMsg {
+  visibility: hidden;
+  color: #3a3;
+  width: 100%;
+  margin: 0 0 .5em .5em;
+}
+
+@media screen and (min-width: 768px) {
+  .inputGroup input, .inputGroup textarea {
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .leftColumn {
+    text-align: left;
+  }
+
+  .inputGroup input, .inputGroup textarea {
+    padding: .75em .5em;
+  }
+}

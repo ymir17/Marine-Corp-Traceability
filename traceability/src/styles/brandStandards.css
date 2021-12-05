@@ -1,0 +1,28 @@
+/* :root {
+  --primaryColor: rgb(0, 208, 227);
+  --secondaryColor: rgb(254, 98, 69);
+  --primaryFontColor: rgb(56, 56, 56);
+  --secondaryFontColor: rgb(255, 255, 255);
+  --backgroundColor: rgb(255, 255, 255);
+  --brandFont: 'Silka';
+  --fallback: sans-serif;
+  --fullFont: var(--brandFont), var(--fallback);
+}
+
+@font-face {
+  font-family: var(--brandFont);
+  src: url('./Fonts/Silka-Regular-&-Italic-Webfont/silka-regular-webfont.eot');
+  src: url('./Fonts/Silka-Regular-&-Italic-Webfont/silka-regular-webfont.woff') format('woff');
+  src: url('./Fonts/Silka-Regular-&-Italic-Webfont/silka-regular-webfont.ttf') format('opentype');
+} */
+
+:root {
+  --primaryColor: rgb(230, 101, 78);
+  --secondaryColor: rgb(94, 55, 236);
+  --primaryFontColor: rgb(54, 54, 54);
+  --secondaryFontColor: rgb(255, 255, 255);
+  --backgroundColor: rgb(207, 207, 207);
+  --brandFont: 'Arial';
+  --fallback: sans-serif;
+  --fullFont: var(--brandFont), var(--fallback);
+}

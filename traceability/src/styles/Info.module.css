@@ -1,0 +1,46 @@
+@import '../styles/variables.css';
+
+.wrapper {
+  flex-grow: 1;
+}
+
+.title {
+  color: var(--textColor);
+  margin: .5em 2rem;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.mainImg {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mainImg img {
+  width: 100%;
+}
+
+.paragraphs {
+  color: var(--textColor);
+  font-size: var(--fontSize);
+  height: 100%;
+  line-height: 2em;
+}
+
+.paragraphs p {
+  margin: 2rem;
+}
+
+.paragraphs p::first-letter {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 961px) {
+  .wrapper {
+    border-radius: var(--borderRadiusM);
+  }
+
+  .mainImg img {
+    border-radius: var(--borderRadiusM) var(--borderRadiusM) 0 0;
+  }
+}

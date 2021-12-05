@@ -1,0 +1,44 @@
+@import '../styles/variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 1em;
+  background-color: var(--bgColor);
+}
+
+.h1 {
+  text-transform: uppercase;
+}
+
+.pWrapper {
+  text-align: justify;
+}
+
+@media screen and (min-width: 961px) {
+  .wrapper {
+    margin: 1em auto;
+    width: 66%;
+    flex-grow: 1;
+    padding: 1em;
+    box-shadow: .25em .0em .5em rgba(0, 0, 0, .25);
+    border-radius: var(--borderRadiusM);
+  }
+
+  .pWrapper {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .wrapper {
+    width: 50%;
+  }
+}

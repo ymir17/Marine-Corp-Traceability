@@ -1,0 +1,18 @@
+@import './brandStandards.css';
+
+:root {
+    --baseColor: var(--primaryColor);
+    --otherColor: var(--secondaryColor);
+    --textColor: var(--primaryFontColor);
+    --secTextColor: var(--secondaryFontColor);
+    --bgColor: var(--backgroundColor);
+    --font: var(--brandFont), var(--fallback);
+    
+    --fontSize: 1.25em;
+    --borderRadius: .15em;
+    --borderRadiusS: .15em;
+    --borderRadiusM: .3em;
+    --borderRadiusL: .5em;
+    --insetShadow: inset 0 0 .5em rgba(0, 0, 0, .5);
+    --boxShadow: .3em .3em 1em .1em rgba(0, 0, 0, .2);
+}

@@ -1,0 +1,14 @@
+.body {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 2em;
+}
+
+.logoImg {
+  width: calc(100% - 4em);
+}
+
+.logoImg img{
+  width: 100%;
+}

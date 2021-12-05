@@ -1,0 +1,10 @@
+.container {
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 961px) {
+  .body {
+    max-width: 33vw;
+    margin: 0 auto;
+  }
+}

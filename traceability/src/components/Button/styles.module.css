@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+.container {
+  height: 1.5em;
+}
+
+.button {
+  background-color: var(--otherColor);
+  border: none;
+  border-radius: 2em;
+  color: var(--secTextColor);
+  cursor: pointer;
+  padding: .5em 1em;
+  margin-top: -1em;
+}
+
+.button:active {
+  box-shadow: var(--insetShadow);
+}

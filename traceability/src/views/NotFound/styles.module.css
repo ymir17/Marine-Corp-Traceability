@@ -1,0 +1,60 @@
+@import '../../styles/variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  flex-grow: 1;
+  padding: 4em 0;
+  width: 100%;
+  border-radius: var(--borderRadiusM);
+  text-align: center;
+}
+
+.card h1 {
+  text-transform: uppercase;
+}
+
+.card p {
+  font-size: var(--fontSize);
+  margin: 4em 1em;
+}
+
+.btn {
+  font-size: var(--fontSize);
+}
+
+.icon {
+  width: 1em;
+  padding-right: .5em;
+  filter: invert(1)
+}
+
+@media screen and (min-width: 961px) {
+  .card {
+    background-color: #fff;
+    flex-grow: 1;
+    margin: 8em;
+    width: 50vw;
+    padding: 4em;
+    border-radius: var(--borderRadiusM);
+    text-align: center;
+  }  
+
+  .card p {
+    margin: 4em;
+  }
+}

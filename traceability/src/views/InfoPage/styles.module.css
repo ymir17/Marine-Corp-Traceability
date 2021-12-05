@@ -1,0 +1,46 @@
+@import '../../styles/variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: var(--baseColor);
+  display: flex;
+  align-items: center;
+  padding: .5em;
+  cursor: pointer;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.footer {
+  width: 100%;
+}
+
+.logo {
+  height: 3em;
+}
+
+.arrow {
+  margin-right: 1em;
+  width: 1.75em;
+  filter: invert(1);
+}
+
+@media screen and (min-width: 961px) {
+  .body {
+    box-shadow: var(--boxShadow);
+    max-width: 33vw;
+    margin: 1em auto;
+    border-radius: var(--borderRadiusM);
+  }
+}

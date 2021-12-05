@@ -1,0 +1,38 @@
+@import '../../styles/variables.css';
+
+.container {
+  background-color: var(--baseColor);
+  padding: 1em .5em;
+}
+
+.p {
+  cursor: pointer;
+  display: block;
+  font-size: 1.75em;
+  margin: 0;
+  text-align: center;
+  margin: .8em;
+}
+
+.p a {
+  display: block;
+  color: var(--secTextColor);
+}
+
+.p a:hover {
+  color: var(--secTextColor);
+  font-weight: bold;
+}
+
+.p * {
+  color: var(--secTextColor);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--boxShadow);
+  }
+}
