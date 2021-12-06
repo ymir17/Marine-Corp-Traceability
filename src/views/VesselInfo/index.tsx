@@ -28,13 +28,20 @@ const months = [
   'December',
 ];
 
+const parseDate = (dateObj:string) => {
+  let result = dateObj.replaceAll('-', '/');
+  console.log(result);
+  return result;
+
+};
+
 const Vessel: React.FC<Props> = ({ isVisible, handleClick, vessel, startDate, endDate, ownedBy }) => {
-  const [ start, setStart ] = useState(new Date(startDate));
-  const [ end, setEnd ] = useState(new Date(endDate));
+  const [ start, setStart ] = useState(new Date(parseDate(startDate)));
+  const [ end, setEnd ] = useState(new Date(parseDate(endDate)));
 
   useEffect(() => {
-    setStart(new Date(startDate));
-    setEnd(new Date(endDate));
+    setStart(new Date(parseDate(startDate)));
+    setEnd(new Date(parseDate(endDate)));
   }, [startDate, endDate]);
 
   return (
