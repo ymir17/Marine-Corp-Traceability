@@ -32,6 +32,8 @@
     object-fit: cover;
     background-color: var(--secTextColor);
     flex-grow: 1;
+    width: 100%;
+    min-height: 100%;
 }
 
 .subBody {
